@@ -3,19 +3,34 @@
 ## Answer 1 Create a Simple Component
 
 ```js
-// Write your code here
+const Welcome = () =>{
+  return (<h1>Welcome to React</h1>);
+}
 ```
 
 ## Answer 2 Create a Bigger Component
 
 ```js
-// Write your code here
+const HelloWorld = () =>{
+  return (
+  <div>
+  <p>Hello</p>
+  <p>World</p>
+  </div>
+  );
+}
 ```
 
 ## Answer 3 Create an Image Component
 
 ```js
-// Write your code here
+const ProfilePicture = () => {
+  return (
+    <img 
+    src='../assets/images/profile-picture.jpg'/>
+    alt='The users profile picture'
+  );
+}
 ```
 
 ## Answer 4 Create a Component that Uses Variables
@@ -50,30 +65,31 @@ const TableOfContents = () => {
   );
 };
 ```
+export default TableOfContents;
 
 ## Answer 7 Import a Component
 
 ```js
-// This is the Gallery.js file
-// Write your code here
+import Gallery from './Gallary.js';
+import Profile. from './Profile.js';
 ```
 
 ## Answer 8 Is the Code Correct? JSX
-
+yes
 ## Answer 9 Fix the JSX Bugs
 
 ```js
 // Modify the code below
 
-const Bio = () => {
+const Summary = () => {
   return (
-    <div class="intro">
-      <h1>Welcome to my website!</h1>
+    <div className="title">
+      <h1>My Site!</h1>
     </div>
-    <p class="summary">
+    <p className="description">
       You can find my thoughts here.
-      <br><br>
-      <b>And <i>pictures</b></i> of scientists!
+      <br>
+      <b>And <i>I</b></i> have plenty of them!
     </p>
   );
 }
@@ -82,7 +98,11 @@ const Bio = () => {
 ## Answer 10 Create a Component with a Prop
 
 ```js
-// Write your code here
+const Greeting = ({ name }) => {
+ return (
+<p>Hello {name}</p>
+ );
+}
 ```
 
 ## Answer 11 Pass a Prop to a Component
@@ -95,4 +115,5 @@ const App = () => {
 
 ## Answer 12 Bain's talk
 
+Energy, interest, vulnerability and curiosity matters alot and its always good to ask questions.
 
